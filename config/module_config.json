@@ -1,0 +1,13 @@
+{
+  "GeneralInfo": {
+    "module": "ps-NetworkTools",
+    "Modified": "5/19/2017",
+    "Author": "Tim Woodland - woodlandt@gmail.com",
+    "ConfigVersion": "1.0.0"
+  },
+  "Settings": {
+    "PublicServices": {
+      "service_GeoIPInfo": "http://ip-api.com/json/"
+    }
+  }
+}
