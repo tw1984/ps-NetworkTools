@@ -34,7 +34,7 @@ function Test-DNSServer {
         Write-Verbose "[$($MyInvocation.MyCommand.Name)] - Entering 'process' block"
         try {
             Write-Verbose -Message "Querying DNS server address $($IPAddresS) for record $($DNSName)."
-            Resolve-DNSName -Name microsoft.com -Server 8.8.8.8 -ErrorAction stop | Out-Null
+            Resolve-DNSName -Name $DNSName -Server $IPAddress -ErrorAction stop | Out-Null
             Write-Host "The DNS Server is answering DNS lookups."
         }
         catch {
