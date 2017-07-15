@@ -12,7 +12,7 @@ function Get-PublicIPInfo {
     Returns sthe IP information in verbose mode
     .NOTES
     #>
-
+    
     [CmdletBinding()]
     param
     (
