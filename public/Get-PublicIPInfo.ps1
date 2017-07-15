@@ -49,7 +49,7 @@ function Get-PublicIPInfo {
             }
         }
         catch {
-            throw "There was an error obtaining inform"
+            throw "There was an error obtaining information on that IP address.  Error $_"
         }
     }
     end {
