@@ -38,7 +38,7 @@ function Get-PublicIPInfo {
                 $ipInfoJSON = Invoke-WebRequest -Uri ($IPLookupServiceURI + $IPAddress.IPAddressToString)
                 if ($ipInfoJSON.StatusCode -eq 200) {
                     $ipInfo = $ipInfoJSON | ConvertFrom-Json
-                    $ipInfo
+                    Write-Output $ipInfo
                 }
                 else {
                     Write-Error "Expected status code 200, but received $($ipInfoJSON.StatusCode)"
