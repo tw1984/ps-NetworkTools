@@ -38,7 +38,7 @@ function Test-DNSServer {
             Write-Host "The DNS Server is answering DNS lookups."
         }
         catch {
-            Write-Error -Message "The specified DNS server is not answer DNS queries."
+            Write-Error -Message "The specified DNS server is not answering DNS queries."
         }
     }
     end {
