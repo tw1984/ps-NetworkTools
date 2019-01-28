@@ -1,18 +1,13 @@
 @{
     # If authoring a script module, the RootModule is the name of your .psm1 file
     RootModule = 'ps-NetworkTools.psm1'
-
     Author = 'Tim Woodland, woodlandt@gmail.com'
-
     CompanyName = 'Tim Woodland'
-
     ModuleVersion = '0.1'
 
     # Use the New-Guid command to generate a GUID, and copy/paste into the next line
     GUID = '3a58847b-bd90-4df2-a110-534ae7d27b6c'
-
     Copyright = '2017 Tim Woodland'
-
     Description = 'General Network Tools'
 
     # Minimum PowerShell version supported by this module (optional, recommended)
@@ -22,7 +17,7 @@
     CompatiblePSEditions = @('Desktop')
 
     # Which PowerShell functions are exported from your module? (eg. Get-CoolObject)
-    FunctionsToExport = @('Get-PublicIPInfo')
+    FunctionsToExport = @('Get-PublicIPInfo','Test-DNSServer')
 
     # Which PowerShell aliases are exported from your module? (eg. gco)
     AliasesToExport = @('')
@@ -34,7 +29,7 @@
     PrivateData = @{
         PSData = @{
             # What keywords represent your PowerShell module? (eg. cloud, tools, framework, vendor)
-            Tags = @('cooltag1', 'cooltag2')
+            Tags = @('Network', 'DNS')
 
             # What software license is your code being released under? (see https://opensource.org/licenses)
             LicenseUri = ''
